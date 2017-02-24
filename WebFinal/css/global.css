@@ -1,0 +1,201 @@
+* {
+  -moz-transition:color .2s ease-out, background 1s ease-in;
+  -webkit-transition:color .2s ease-out, background 1s ease-in;
+  
+  transition:color .2s ease-out, background 1s ease-in;
+}
+
+body {
+	margin:0 auto;
+	width:1000px;
+	background:#fff;
+	font-family:'Open Sans', sans-serif;
+}
+
+a {
+	color:#495F2B;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#495F2B;
+	text-decoration:underline;
+}
+h6 {
+	font-size:10px;
+	color:#fff;
+	padding:0;
+	margin:0;
+	visibility:hidden;
+	display:none;
+}
+header {
+	background:#000;
+	min-height:100px;
+	color:#fff;
+}
+header h1 {
+	margin:0 5%;
+	font-size:3.75em;
+	font-family:'Lobster', cursive;
+	font-weight:600;
+	line-height:2em;
+}
+header nav ul{
+	padding:0;
+	margin:0 4%;
+}
+header nav li {
+	list-style-type:none;
+	display:inline-block;
+	margin:0 1% 10px 0;
+	text-align:center;
+}
+header nav li a{
+	background:#f9f9f9;
+	padding:3px 12px;
+}
+header nav li a.active{
+	background:#495F2B;
+	text-decoration:none;
+	color:#fff;
+}
+header nav li a:hover{
+	text-decoration:none;
+	background:#495F2B;
+	color:#fff
+	
+}
+section{
+	overflow:hidden; /*Contains floated element!!!*/
+	padding-top:2%;
+	padding-bottom:2%;
+}
+section article h2 {
+	font-size:2em;
+	font-family:'Open Sans', sans-serif;
+	font-weight:300;
+}
+
+section.whole article {
+	background:#000;
+	min-height:150px;
+	width:100%;
+	margin-top:1%;
+	float:left;
+	color:#fff;
+}
+section.whole article h2, section.whole article p {
+	margin:4%;
+}
+section.whole article p {
+	line-height:200%;
+	max-width: 1000px;
+	margin:0% 7.5% 2% 7.5%;
+	font-weight:400;
+}
+section.whole article img {
+	max-width:100%; 
+	max-height:100%;
+	margin:auto;
+	display:block;
+}
+section.half article h2, section.half article p {
+	margin:5%;
+	text-align:center;
+}
+section.half article p {
+	line-height:200%;
+}
+section.half article img {
+	max-width:80%; 
+	max-height:80%;
+	margin:auto;
+	display:block;
+}
+section.third article h2, section.third article p {
+	margin:5%;
+}
+section.third article h2 {
+	text-align:left;
+}
+section.third article p {
+	text-align:center;
+}
+section.third article img {
+	max-width:80%; 
+	max-height:80%;
+	margin:auto;
+	display:block;
+}
+	
+@media screen and (min-width: 961px) { /*Scaling for browser window*/
+	section.third article {			   /*above 961px*/
+		background:#000;
+		min-height:150px;
+		width:29%;
+		margin:1% 2%;
+		float:left;
+		color:#fff;
+	}
+	section.half article {			   /*above 961px*/
+		background:#000;
+		min-height:150px;
+		width:45%;
+		margin:1% 2%;
+		float:left;
+		color:#fff;
+	}
+}
+@media screen and (max-width: 960px) { /*Scaling for browser window*/
+	section.third article {			   /*below 961px*/
+		background:#000;
+		min-height:150px;
+		width:45%;
+		margin:1% 2%;
+		float:left;
+		color:#fff;
+	}
+	section.half article {			   /*above 961px*/
+		background:#000;
+		min-height:150px;
+		width:95%;
+		margin:1% 2%;
+		float:left;
+		color:#fff;
+	}
+	header nav ul {
+		margin:0;
+	}
+	header nav li {
+		width:100%;
+		margin:1px 0 0 0;
+	}
+	header nav li a {
+		display:block;
+		width:100%;
+	}
+}
+footer {
+	background:#000;
+	min-height:100px;
+	color:#fff;
+	clear:left;
+}
+footer ul{
+	padding:0;
+	margin:1% 1% 1% 4.5%;
+}
+footer li {
+	list-style: none;
+	line-height: 2em;
+}
+footer a{
+	
+}
+footer section.half article p, section.half article h2 {
+	text-align:left;
+}
+section.transparent article { /*!!!Must be at bottom of page to override other backgrounds*/
+	background:transparent;
+}

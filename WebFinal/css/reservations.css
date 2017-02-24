@@ -1,0 +1,101 @@
+section.whole article {
+	background:#000;
+	min-height:150px;
+	width:100%;
+	margin-top:1%;
+	float:left;
+	color:#fff;
+}
+section.whole article h2, section.whole article p {
+	margin:4%;
+}
+section.whole article p {
+	line-height:200%;
+	max-width: 1000px;
+	margin:0% 7.5% 2% 7.5%;
+	font-weight:400;
+}
+section.whole article img {
+	max-width:100%; 
+	max-height:100%;
+	margin:auto;
+	display:block;
+}
+section.half article h2, section.half article p {
+	margin:5%;
+	text-align:center;
+}
+section.half article p {
+	line-height:200%;
+}
+section.half article img {
+	max-width:80%; 
+	max-height:80%;
+	margin:auto;
+	display:block;
+}
+section.third article h2, section.third article p {
+	margin:5%;
+}
+section.third article h2 {
+	text-align:left;
+}
+section.third article p {
+	text-align:center;
+}
+section.third article img {
+	max-width:80%; 
+	max-height:80%;
+	margin:auto;
+	display:block;
+}
+	
+@media screen and (min-width: 961px) { /*Scaling for browser window*/
+	section.third article {			   /*above 961px*/
+		background:#000;
+		min-height:150px;
+		width:29%;
+		margin:1% 2%;
+		float:left;
+		color:#fff;
+	}
+	section.half article {			   /*above 961px*/
+		background:#000;
+		min-height:150px;
+		width:45%;
+		margin:1% 2%;
+		float:left;
+		color:#fff;
+	}
+}
+@media screen and (max-width: 960px) { /*Scaling for browser window*/
+	section.third article {			   /*below 961px*/
+		background:#000;
+		min-height:150px;
+		width:45%;
+		margin:1% 2%;
+		float:left;
+		color:#fff;
+	}
+	section.half article {			   /*above 961px*/
+		background:#000;
+		min-height:150px;
+		width:95%;
+		margin:1% 2%;
+		float:left;
+		color:#fff;
+	}
+	header nav ul {
+		margin:0;
+	}
+	header nav li {
+		width:100%;
+		margin:1px 0 0 0;
+	}
+	header nav li a {
+		display:block;
+		width:100%;
+	}
+}
+
+
